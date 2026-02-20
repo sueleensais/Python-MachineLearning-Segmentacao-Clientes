@@ -105,7 +105,7 @@ O resultado da segmentação foi importado para o Power BI Desktop e visualizado
 - Média de pontuação de gastos por segmento
 - Distribuição de clientes por cluster
 
-![Dashboard Power BI](imagens/dashboard.png)
+![Dashboard Power BI](dashboard.png)
 
 ### Resultados
 - Segmento 0: clientes com maior renda anual média.
@@ -117,6 +117,7 @@ Esses insights permitem que a área de Marketing direcione campanhas específica
 - Python (Pandas, Scikit-learn)
 - Jupyter Notebook
 - Power BI Desktop
+
 
 
 
