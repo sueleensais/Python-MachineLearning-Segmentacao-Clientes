@@ -18,29 +18,30 @@ O desafio é aplicar **Machine Learning (K-Means)** para criar os clusters e dis
 
 ## Passo a Passo
 
-### 1. Carregamento dos Dados
+# 1. Carregamento dos Dados
 
 ```python
-# Verifica a versão da Linguagem Python
+# Versão da Linguagem Python
 
 from platform import python_version
 print('Versão da Linguagem Python Usada Neste Jupyter Notebook:', python_version())
 ```
-
+```python
 # Importa os pacotes
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 ```
-
+```python
 # Carrega os dados
 df_dsa = pd.read_csv('dados/dados_clientes.csv')
 ```
-
+```python
 # Verifica o tipo do objeto
 type(df_dsa)
 ```
 
+```python
 # Visualiza as 10 primeiras linhas
 df_dsa.head(10)
 ```
@@ -57,11 +58,14 @@ df_dsa[['idade', 'renda_anual', 'pontuacao_gastos']].describe()
 ```python
 # Cria o padronizador dos dados
 padronizador = StandardScaler()
+```
 
+```python
 # Aplica o padronizador somente nas variáveis de interesse
 dados_padronizados = padronizador.fit_transform(df_dsa[['idade', 'renda_anual', 'pontuacao_gastos']])
+```
 
-
+```python
 # Visualiza os dados
 print(dados_padronizados)
 ```
@@ -71,22 +75,26 @@ print(dados_padronizados)
 ```python
 # Definição do número de clusters (k).
 k = 3
-
+```
+```python
 # Cria o modelo K-means
 kmeans = KMeans(n_clusters = k)
-
+```
+```python
 # Treina o modelo com os dados padronizados
 kmeans.fit(dados_padronizados)
-
-# Atribuí os rótulos dos clusters aos clientes
+```
+```python
+# Atribui os rótulos dos clusters aos clientes
 df_dsa['cluster'] = kmeans.labels_
-
+```
+```python
 # Exibe o resultado (10 primeiras linhas)
 df_dsa.head(10)
-
+```
+```python
 # Salva o resultado em disco
 df_dsa.to_csv('dados/segmentos.csv', index = False)
-
 ```
 ### 5. Relatório no Power BI
 
@@ -109,6 +117,7 @@ Esses insights permitem que a área de Marketing direcione campanhas específica
 - Python (Pandas, Scikit-learn)
 - Jupyter Notebook
 - Power BI Desktop
+
 
 
 
