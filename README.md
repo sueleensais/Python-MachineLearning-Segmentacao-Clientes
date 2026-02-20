@@ -18,7 +18,7 @@ O desafio é aplicar **Machine Learning (K-Means)** para criar os clusters e dis
 
 ## Passo a Passo
 
-# 1. Carregamento dos Dados
+### 1. Carregamento dos Dados
 
 ```python
 # Versão da Linguagem Python
@@ -117,6 +117,7 @@ Esses insights permitem que a área de Marketing direcione campanhas específica
 - Python (Pandas, Scikit-learn)
 - Jupyter Notebook
 - Power BI Desktop
+
 
 
 
