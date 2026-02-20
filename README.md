@@ -112,3 +112,4 @@ Esses insights permitem que a área de Marketing direcione campanhas específica
 
 
 
+
