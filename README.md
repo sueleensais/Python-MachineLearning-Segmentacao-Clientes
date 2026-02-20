@@ -1,5 +1,7 @@
 # Segmentação de Clientes com Machine Learning (Python + Power BI)
 
+Projeto desenvolvido durante o capítulo 16 do curso "Microsoft Power BI Para Business Intelligence e Data Science" da Data Science Academy.
+
 ## Descrição
 Este projeto utiliza dados fictícios de clientes para realizar **segmentação de mercado** com base em idade, renda anual e pontuação de gastos.  
 O objetivo é agrupar os clientes em **3 segmentos distintos** e gerar um relatório visual no **Power BI**, permitindo que a área de Marketing personalize campanhas e estratégias.
@@ -117,6 +119,7 @@ Esses insights permitem que a área de Marketing direcione campanhas específica
 - Python (Pandas, Scikit-learn)
 - Jupyter Notebook
 - Power BI Desktop
+
 
 
 
