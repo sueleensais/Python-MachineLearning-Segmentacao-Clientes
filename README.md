@@ -109,16 +109,11 @@ O resultado da segmentação foi importado para o Power BI Desktop e visualizado
 
 ![Dashboard Power BI](dashboard.png)
 
-### Resultados
-- Segmento 0: clientes com maior renda anual média.
-- Segmento 1: clientes com maior pontuação de gastos.
-- Segmento 2: clientes mais jovens, com renda e gastos intermediários.
-Esses insights permitem que a área de Marketing direcione campanhas específicas para cada perfil de cliente
-
 ### Ferramentas Utilizadas
 - Python (Pandas, Scikit-learn)
 - Jupyter Notebook
 - Power BI Desktop
+
 
 
 
