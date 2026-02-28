@@ -1,14 +1,13 @@
-# Segmentação de Clientes com Machine Learning (Python + Power BI)
-
-Projeto desenvolvido durante o capítulo 16 do curso "Microsoft Power BI Para Business Intelligence e Data Science" da Data Science Academy.
+# Segmentação de Clientes com Machine Learning
 
 ## Descrição
-Este projeto utiliza dados fictícios de clientes para realizar **segmentação de mercado** com base em idade, renda anual e pontuação de gastos.  
-O objetivo é agrupar os clientes em **3 segmentos distintos** e gerar um relatório visual no **Power BI**, permitindo que a área de Marketing personalize campanhas e estratégias.
+
+Este projeto utiliza dados fictícios de clientes, disponibilizados pela Data Science Academy. O objetivo é realizar uma segmentação de mercado com base em idade, renda anual e pontuação de gastos, agrupando os clientes em 3 segmentos distintos e, posteriormente, gerar um relatório visual no Power BI, permitindo que a área de Marketing personalize campanhas e estratégias.
 
 ## Definição do Problema
 A empresa deseja identificar grupos de clientes com características semelhantes para direcionar campanhas de Marketing.  
-O desafio é aplicar **Machine Learning (K-Means)** para criar os clusters e disponibilizar um relatório com:
+O desafio é aplicar Machine Learning (utilizando K-Means) para criar os clusters e disponibilizar um relatório com:
+
 - Média de idade por segmento
 - Média de renda anual por segmento
 - Média de pontuação de gastos por segmento
@@ -48,7 +47,7 @@ type(df_dsa)
 df_dsa.head(10)
 ```
 
-### 2. Análise Exploratória
+### 2. Análise Exploratória dos Dados
 
 ```python
 # Resumo estatístico das variáveis para verificar consistência e distribuição dos dados
@@ -72,7 +71,7 @@ dados_padronizados = padronizador.fit_transform(df_dsa[['idade', 'renda_anual', 
 print(dados_padronizados)
 ```
 
-### 4. Construção do Modelo
+### 4. Modelo (K-Means)
 
 ```python
 # Definição do número de clusters (k).
@@ -113,6 +112,7 @@ O resultado da segmentação foi importado para o Power BI Desktop e visualizado
 - Python (Pandas, Scikit-learn)
 - Jupyter Notebook
 - Power BI Desktop
+
 
 
 
